@@ -3,8 +3,8 @@ package com.praveen.domain;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-public class ConvertBean {
-
+public class ConversionBean {
+	
 	@NotEmpty(message = "convertFrom values can only take values from the list {KM, MI, CELCIUS, KELVIN}")
     private String convertFrom;
     @NotEmpty(message = "convertTo values can only take values from the list {KM, MI, CELCIUS, KELVIN}")
@@ -56,5 +56,4 @@ public class ConvertBean {
         this.message = message;
     }
 
-	
 }
